@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="" />
+  <title>Dongo</title>
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/carousel/" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
+  <link href="styles/style.css" rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-nav">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">DONGO</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0 justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#grupo">Grupo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#apresentacao">Apresentação</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#arma">Armas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#hardware">Hardware</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#robocup">RoboCup</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#video">Video</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#socio">Seja sócio</a>
+            </li>            
+            <li class="nav-item">
+              <a class="nav-link" href="#contato">Contato</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div id="myCarousel" class="carousel slide bg-carousel" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+          aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="bd-placeholder-img mr-3" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false" src="./images/dongo_na_mesa.jpg"
+            alt="Robô na mesa" />
+          <div class="container">
+            <div class="carousel-caption text-start text-dark"></div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false" src="./images/dongo_cima.jpg"
+            alt="Robô visto de cima" />
+
+          <div class="container">
+            <div class="carousel-caption"></div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false" src="./images/dongo_frente.jpg"
+            alt="Robô visto de frente" />
+          <div class="container">
+            <div class="carousel-caption text-end"></div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false" src="./images/dongo_costas.jpg"
+            alt="Robô visto de costas" />
+
+          <div class="container">
+            <div class="carousel-caption"></div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false" src="./images/dongo_dentro.jpg"
+            alt="Dentro do robô" />
+
+          <div class="container">
+            <div class="carousel-caption"></div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <div class="container marketing" id="grupo">
+      <div class="row justify-content-center">
+        <div class="col-lg-2 text-center">
+          <img src="./images/alvim.jpeg" class="bd-placeholder-img rounded-circle mb-2" width="140" height="140" />
+
+          <h3 class="fw-normal">André Alvim</h3>
+        </div>
+        <!-- /.col-lg-3 -->
+        <div class="col-lg-2 text-center">
+          <img src="./images/vini.jpeg" class="bd-placeholder-img rounded-circle mb-2" width="140" height="140" />
+
+          <h3 class="fw-normal">Vinicius Rodrigues</h3>
+        </div>
+        <div class="col-lg-2 text-center">
+          <img src="./images/lucas.png" class="bd-placeholder-img rounded-circle mb-2" width="140" height="140" />
+
+          <h3 class="fw-normal">Lucas Nunes</h3>
+        </div>
+        <div class="col-lg-2 text-center">
+          <img src="./images/rafael.jpeg" class="bd-placeholder-img rounded-circle mb-2" width="140" height="140" />
+
+          <h3 class="fw-normal">Rafael Privitera</h3>
+        </div>
+        <div class="col-lg-2 text-center">
+          <img src="./images/viana.jpeg" class="bd-placeholder-img rounded-circle mb-2" width="140" height="140" />
+
+          <h3 class="fw-normal">Guilherme Viana</h3>
+        </div>
+      </div>
+
+      <hr class="featurette-divider" />
+
+      <div class="row featurette" id="apresentacao">
+        <div class="col-md-7">
+          <h2 class="featurette-heading fw-normal lh-1">Apresentação</h2>
+          <p class="lead">
+            O robô Dongo, apesar de hoje ser um robô funcional, passou por
+            incontáveis etapas de desenvolvimento. Ideias e projetos
+            frustrados por diversas adversidades encontradas durante todo o
+            decorrer de seu desenvolvimento fez nosso grupo, Matamba, se
+            sentir a beira do colapso, prestes a desistir. Hoje com o projeto
+            finalizado e pronto para participar da Robocup, ele representa
+            para nós o símbolo de nossa união e perseverança em prol de um
+            objetivo em comum a todos do Matamba, o Dongo. Independentemente
+            do resultado da competição, ter o projeto final entregue e o Dongo
+            em mãos, depois de um árduo processo de desenvolvimento, é a maior
+            recompensa que poderíamos ter.
+          </p>
+        </div>
+        <div class="col-md-5 order-md-1" style="height: 500px">
+          <img src="./images/apresentacao.jpeg" alt="" class="mx-auto px-2" width="450" height="450" />
+        </div>
+      </div>
+
+      <hr class="featurette-divider" />
+
+      <div class="row featurette" id="arma">
+        <div class="col-md-7 order-md-2">
+          <h2 class="featurette-heading fw-normal lh-1">Arma</h2>
+          <p class="lead">
+            A arma foi um dos fatores que passou por diversas mudanças,
+            durante o desenvolvimento dela colocamos a prova nossas
+            capacidades em elétrica, para entender como funciona um motor e
+            seus terminais tanto a nível de hardware quanto a nível de
+            software, e de design para que pudéssemos encaixar em um único
+            robô uma arma funcional e que respeitasse às exigências da
+            RoboCup. O funcionamento da arma se baseia na ativação dos
+            sensores através do contato, quando ativados os sensores mandam um
+            sinal para o Arduíno que libera voltagem para o motor fazendo com
+            que rotacione um palito com varios alfinetes na ponta em direção
+            ao balão do adversário.
+          </p>
+        </div>
+        <div class="col-md-5 order-md-1" style="height: 500px">
+          <img src="./images/arma.jpeg" alt="" class="mx-auto" width="450" height="450" />
+        </div>
+      </div>
+
+      <hr class="featurette-divider" />
+
+      <div class="row featurette" id="hardware">
+        <div class="col-md-7">
+          <h2 class="featurette-heading fw-normal lh-1">Hardware</h2>
+          <p>
+            1 arduino BlackBoard UNO R3 / 3 Motores 5 Volts / 4 Chaves de fim
+            de curso / 1 Shield de Motor /
+            <span>1 Shield de Bluetooth HC-06 / soquete de pilhas AA / 1 LED de
+              3MM / 1 Chave liga e desliga</span>
+          </p>
+          <p class="lead">
+            A composição de hardware do projeto foi auxiliada pelo professor
+            de Arquitetura e Organização de Computadores, Nivaldo Zafalon
+            Junior, assim como as ligações elétricas do projeto e com esse
+            conhecimento passado nós desenvolvemos o robô de acordo com as
+            nossas preferências.
+          </p>
+        </div>
+        <div class="col-md-5 order-md-1" style="height: 500px">
+          <img src="./images/hardware.jpeg" alt="" class="mx-auto" width="450" height="450" />
+        </div>
+      </div>
+
+      <hr class="featurette-divider" />
+
+      <div class="row featurette" id="robocup">
+        <div class="col-md-7 order-md-2">
+          <h2 class="featurette-heading fw-normal lh-1">RoboCup</h2>
+          <p class="lead">
+            Robocup é o torneio mais antigo da FIAP. Alunos do primeiro ano de
+            sistemas de Informação constroêm robôs para competir em duelos,
+            onde o objetivo principal é fazer explodir o balão posicionado no
+            robô adversário. Para fazer isso, todos os projetos estão armados.
+            Mas a competição também exige que o robô seja totalmente
+            funcional. Mesmo depois de estourar o balão do oponente, a arma
+            deve ser devolvida à posição original, só assim você será
+            considerado um vencedor.
+          </p>
+        </div>
+        <div class="col-md-5 order-md-1" style="height: 500px">
+          <img src="./images/robo.jpeg" alt="" class="mx-auto" width="450" height="450" />
+        </div>
+      </div>
+
+      <hr class="featurette-divider" />
+
+      <div class="row featurette" id="video">
+        <div class="col-md-6">
+          <iframe src="https://player.vimeo.com/video/755723301?h=fd37368815" width="500px" height="500px"
+            frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="col-md-6">
+          <iframe src="https://player.vimeo.com/video/755675744?h=fd37368815" width="500px" height="500px"
+            frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+          <!--  -->
+        </div>
+      </div>
+
+      <hr class="featurette-divider" id="socio"/>
+
+      <h2 class="text-center text-white">
+        Por quê escolher Dongo?
+      </h2>
+      <p class="text-center text-white">
+        Nossa proposta com a Matamba é levar a robótica educacional a todos. Dessa forma com o projeto Dongo idealizamos
+        a possibilidade de um grande projeto de inclusão.
+        Utilizar o robô para crianças e jovens com diferentes tipos de deficiência possibilita o contato direto com a
+        tecnologia, a inclusão e o desenvolvimento do estudante. Com formas de contornar a deficiência de uma criança
+        para permití-la ter contato com esse mundo tecnológico de forma intuitiva e lúdica é uma maneira direta de agir
+        na inclusão desses jovens, que muitas vezes crescem excluídos de diversos nichos por limitações causadas pela
+        sua deficiência.
+        Diferente das outras empresas do ramo que trabalham com a tecnologia e robótica sem nenhuma alteração para ser
+        recebida por PCDs, nós da Matamba desenvolvemos métodos de adaptação de Robôs, com o uso de Arduinos (como no
+        projeto Dongo) para que crianças e jovens portadores de deficiências possam ter contato direto com essa
+        tecnologia. Nosso grande plano é tornar a tecnologia e a robótica algo tão trivial e acessível quanto um jogo
+        infantil comum, assim incluindo a todos.
+      </p>
+
+      <div class="col-12 my-3 d-flex justify-content-center">
+        <a class="btn btn-outline-light fs-5 px-4 py-2" href="">Seja Sócio</a>  
+      </div>      
+
+      <hr class="featurette-divider" />
+
+      <form id="contato" name="dados" method="post" action="">
+        <h2>Contato</h2>
+        <div class="row">
+          <div class="col-md-6 my-3">
+            <label for="usuario" class="form-label">Usuário</label>
+            <input type="text" id="usuario" name="usuario" class="form-control bg-nav" placeholder="Ex: SeuUsuário"
+              minlength="10" maxlength="15" required />
+          </div>
+
+          <div class="col-md-6 my-3">
+            <label for="email" class="form-label">Email </label>
+            <input type="email" name="email" id="email" class="form-control bg-nav" placeholder="Ex: seuemail@email.com"
+              required />
+          </div>
+
+          <div class="col-12 my-3">
+            <label for="mensagem" class="form-label">Mensagem:</label>
+            <textarea name="mensagem" id="mensagem" class="form-control bg-nav">
+              </textarea>
+          </div>
+
+          <div class="col-12 my-3 d-flex justify-content-end">
+            <!-- HTML 5  -->
+            <button type="submit" class="btn bg-primary-green me-2">
+              Enviar
+            </button>
+          </div>
+
+
+        </div>
+      </form>
+
+
+
+      <hr class="featurette-divider" />
+
+
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="container">
+      <p class="float-end">
+        <a href="#" class="text-white">Voltar pro topo</a>
+      </p>
+      <p>&copy; 2022, Matamba Inc.</p>
+    </footer>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
